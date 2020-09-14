@@ -8,11 +8,11 @@ pkgs.mkShell {
     clang_9
     cmake
     shellcheck
+    cppcheck
   ];
   shellHook = ''
     if [ -d "$PWD"/.git ] && [ ! -f "$PWD"/.git/hooks/pre-commit ]; then
-      echo Install pre commit!
-      # pre-commit install
+      pre-commit install
     fi
   '';
 }

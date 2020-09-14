@@ -10,7 +10,8 @@ repos:
     rev: master
     hooks:
     -   id: shellcheck
--   repo: github.com/pocc/pre-commit-hooks
+-   repo: https://github.com/pocc/pre-commit-hooks
+    rev: master
     hooks:
     -   id: clang-format
     -   id: clang-tidy
