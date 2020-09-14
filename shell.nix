@@ -14,5 +14,7 @@ pkgs.mkShell {
     if [ -d "$PWD"/.git ] && [ ! -f "$PWD"/.git/hooks/pre-commit ]; then
       pre-commit install
     fi
+    export CAT_OUTPUT_DIR="$PWD/CAT"
+    export PATH="$CAT_OUTPUT_DIR/bin:$PATH"
   '';
 }
