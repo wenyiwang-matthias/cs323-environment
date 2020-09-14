@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 pass_cmd="${CAT_PASS_NAME}"
 lib_dir="${CAT_LIB_PATH}"

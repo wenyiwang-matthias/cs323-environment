@@ -2,6 +2,8 @@
 build
 .direnv
 .direnv/*
+CAT
+CAT/*
 
 # Created by https://www.toptal.com/developers/gitignore/api/vim,emacs,visualstudiocode,cmake,c++
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,emacs,visualstudiocode,cmake,c++
