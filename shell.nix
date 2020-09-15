@@ -1,6 +1,7 @@
 { pkgs ? import <nixpkgs> {}}:
 
-pkgs.mkShell {
+pkgs.stdenv.mkDerivation {
+  name = "cs323";
   CAT_OUTPUT_DIR = ./. + "/CAT";
   buildInputs = with pkgs; [
     pre-commit
