@@ -2,14 +2,14 @@
 
 pkgs.stdenv.mkDerivation {
   name = "cs323";
-  CAT_OUTPUT_DIR = ./. + "/CAT";
   buildInputs = with pkgs; [
-    pre-commit
-    llvm_9
+    ccls
     clang_9
     cmake
-    shellcheck
     cppcheck
+    llvm_9
+    pre-commit
+    shellcheck
   ];
   shellHook = ''
     if [ -d "$PWD"/.git ] && [ ! -f "$PWD"/.git/hooks/pre-commit ]; then
