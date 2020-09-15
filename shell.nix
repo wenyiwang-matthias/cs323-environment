@@ -3,10 +3,11 @@
 pkgs.stdenv.mkDerivation {
   name = "cs323";
   buildInputs = with pkgs; [
-    ccls
+    clang-tools
     clang_9
     cmake
     cppcheck
+    cpplint
     llvm_9
     pre-commit
     shellcheck

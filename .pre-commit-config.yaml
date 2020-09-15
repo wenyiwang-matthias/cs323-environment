@@ -10,9 +10,9 @@ repos:
     rev: master
     hooks:
     -   id: shellcheck
--   repo: https://github.com/pocc/pre-commit-hooks
+-   repo: https://github.com/bmorcos/pre-commit-hooks-cpp
     rev: master
     hooks:
     -   id: clang-format
-    -   id: clang-tidy
+    -   id: cpplint
     -   id: cppcheck
