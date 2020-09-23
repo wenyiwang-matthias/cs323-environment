@@ -1,6 +1,6 @@
 # CS 323: Nix Environment
 
-To install llvm and get your system ready:
+To work on the project on your laptop:
 
 1. Install the `nix` package manager:
 
